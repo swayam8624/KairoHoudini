@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <toolshelf name="kairo_cacheguard" label="Kairo">
+    <memberTool name="kairo_cacheguard_validate"/>
+  </toolshelf>
+  <tool name="kairo_cacheguard_validate" label="Validate Cache" icon="COMMON_error">
+    <helpText>Inspect the selected simulation cache and report production blockers.</helpText>
+    <script scriptType="python"><![CDATA[
+from kairo_houdini.hom import show_selected_cacheguard
+show_selected_cacheguard()
+]]></script>
+  </tool>
+</shelfDocument>
+
