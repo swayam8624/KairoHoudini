@@ -22,3 +22,13 @@ PYTHONPATH=../KairoPipelineCore/src:scripts/python \
 Host-neutral tests run without Houdini. Native `hou` and `hython` verification
 is a separate release gate and is never inferred from mocks.
 
+## What artists get
+
+- one-click inspection from a Kairo shelf;
+- exact missing-frame ranges for resumable simulation work;
+- stale-upstream, path, free-space, and cache-budget diagnostics;
+- immutable cache publication with per-frame SHA-256 fingerprints;
+- manifests that downstream Nuke and engine tools can validate.
+
+See [the artist workflow](docs/artist-workflow.md) for the production path and
+native release checklist.
