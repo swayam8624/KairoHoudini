@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kairo-houdini"
+version = "0.1.0"
+description = "Houdini simulation cache validation and publication tools"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Swayam Singal"}]
+
+[tool.setuptools.packages.find]
+where = ["scripts/python"]
+
