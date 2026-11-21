@@ -1,3 +1,9 @@
+# TEACHING MAP — scripts/python/kairo_houdini/__init__.py
+# Houdini Python package entrypoint for cache diagnostics and publishing helpers. The
+# portable pipeline contract lives in KairoPipelineCore; HOM-host integration lives in
+# hom.py.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 """Houdini CacheGuard validation and publication tools."""
 
 from .cacheguard import (
