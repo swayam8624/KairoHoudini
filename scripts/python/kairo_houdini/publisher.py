@@ -1,3 +1,8 @@
+# TEACHING MAP — scripts/python/kairo_houdini/publisher.py
+# Uses KairoPipelineCore publish/manifest APIs to stage and verify Houdini cache exports.
+# Filesystem mutations belong to explicit publish transactions, not passive diagnostics.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 """Immutable Houdini cache publication through KairoPipelineCore."""
 
 from __future__ import annotations

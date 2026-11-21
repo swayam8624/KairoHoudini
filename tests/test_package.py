@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_package.py
+# Validates Python package import/installation boundaries for running the Houdini tool
+# extension.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 from __future__ import annotations
 
 import unittest

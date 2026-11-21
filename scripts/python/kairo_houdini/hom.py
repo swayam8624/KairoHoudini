@@ -1,3 +1,8 @@
+# TEACHING MAP — scripts/python/kairo_houdini/hom.py
+# Native Houdini Object Model adapter mapping nodes/caches to portable CacheGuard inputs.
+# This requires a Houdini host and cannot be fully tested by plain Python mocks.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 """Houdini Object Model adapter for CacheGuard."""
 
 from __future__ import annotations

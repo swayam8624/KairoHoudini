@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_cacheguard.py
+# Tests pure cache-range analysis, missing-frame detection and staleness rules used by
+# Houdini workflows.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 from __future__ import annotations
 
 from pathlib import Path

@@ -1,3 +1,9 @@
+# TEACHING MAP — scripts/python/kairo_houdini/cacheguard.py
+# Analyzes simulation cache filenames, frame-range gaps, stale upstream hashes and disk
+# budget before simulation/publishing. It should report missing work rather than silently
+# recook artist scenes.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 """Host-neutral simulation cache inspection and validation rules."""
 
 from __future__ import annotations

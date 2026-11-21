@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_hom_adapter.py
+# Tests adapter behavior with simulated Houdini APIs; native HOM installation/testing
+# remains a distinct gate.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 from __future__ import annotations
 
 import unittest

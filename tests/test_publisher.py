@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_publisher.py
+# Checks publish transactions, manifests, fingerprints and failure paths without silently
+# altering source caches.
+# Consult READING_ORDER.md for related host APIs, validation and tests.
+
 from __future__ import annotations
 
 from pathlib import Path
