@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Pure CacheSnapshot and CacheProfile validation: uses KairoPipelineCore frame scanning, path
+# validation, diagnostics and fingerprints to flag missing/stale/overbudget caches.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 """Host-neutral simulation cache inspection and validation rules."""
 
 from __future__ import annotations
