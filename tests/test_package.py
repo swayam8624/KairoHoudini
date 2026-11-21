@@ -1,3 +1,7 @@
+# SOURCE STUDY NOTE:
+# Package/import layout regression tests and release checks for the Houdini integration.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 from __future__ import annotations
 
 import unittest

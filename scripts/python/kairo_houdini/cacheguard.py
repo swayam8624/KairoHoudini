@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Pure CacheSnapshot and CacheProfile validation: uses KairoPipelineCore frame scanning, path
+# validation, diagnostics and fingerprints to flag missing/stale/overbudget caches.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 """Host-neutral simulation cache inspection and validation rules."""
 
 from __future__ import annotations
@@ -38,6 +43,9 @@ class CacheProfile:
             raise ValueError("cache storage budget must be positive")
 
 
+# Teaching: convert a declared cache pattern and frame range into a
+# deterministic SequenceScan. This inspection stage is read-only; downstream
+# validate_cache and publisher.py decide whether the cache is publishable.
 def inspect_cache(
     project_root: Path,
     *,

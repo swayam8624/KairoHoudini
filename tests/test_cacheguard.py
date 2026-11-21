@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Host-neutral missing-frame, storage and staleness diagnostic checks, not native hython/HOM
+# integration.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 from __future__ import annotations
 
 from pathlib import Path

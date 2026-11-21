@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Publishes fully validated cache frame sequences and source fingerprints using KairoPipelineCore
+# manifest/plan_publish/publish_bundle; dry-run does not commit filesystem changes.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 """Immutable Houdini cache publication through KairoPipelineCore."""
 
 from __future__ import annotations
@@ -22,6 +27,9 @@ class CachePublishResult:
     dry_run: bool
 
 
+# Teaching: this is the filesystem mutation boundary after CacheGuard
+# preflight. Every frame is fingerprinted for a manifest; KairoPipelineCore
+# provides dry-run planning and atomic final exposure.
 def publish_cache(
     project_root: Path,
     snapshot: CacheSnapshot,

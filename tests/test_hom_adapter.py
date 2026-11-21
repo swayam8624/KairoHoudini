@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Guarded tests for Houdini frame-token normalization and host integration behavior; pure test success
+# does not establish native Houdini availability.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 from __future__ import annotations
 
 import unittest
