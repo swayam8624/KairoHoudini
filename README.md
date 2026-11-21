@@ -1,5 +1,7 @@
 # Kairo Houdini CacheGuard
 
+> **Learn from source:** [Source teaching guide](docs/SOURCE_READING_ORDER.md) follows the Houdini HOM adapter, $F-to-frame-sequence handling, CacheGuard diagnostics, fingerprinting and atomic cache publishing; native hython verification remains a separate gate. Existing project [LICENSE](LICENSE) is preserved; third-party DCC packages and assets retain their own terms.
+
 CacheGuard is an artist-facing Houdini package for validating simulation cache
 nodes, detecting incomplete or stale frame sequences, estimating storage cost,
 and publishing immutable cache versions through `KairoPipelineCore`.
