@@ -1,3 +1,7 @@
+> **Read the source as a system:** [READING_ORDER.md](READING_ORDER.md) links the code in a recommended conceptual order, explains host interfaces and calls into other pipeline modules.
+>
+> **Open source:** existing [LICENSE](LICENSE) terms remain unchanged. You may learn, modify and extend original code subject to those terms; third-party host SDKs/assets retain their licenses. Full function annotations and native host tests are separate work.
+
 # Kairo Houdini CacheGuard
 
 CacheGuard is an artist-facing Houdini package for validating simulation cache
