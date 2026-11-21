@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Publishes fully validated cache frame sequences and source fingerprints using KairoPipelineCore
+# manifest/plan_publish/publish_bundle; dry-run does not commit filesystem changes.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 """Immutable Houdini cache publication through KairoPipelineCore."""
 
 from __future__ import annotations
