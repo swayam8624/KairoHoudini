@@ -27,6 +27,9 @@ class CachePublishResult:
     dry_run: bool
 
 
+# Teaching: this is the filesystem mutation boundary after CacheGuard
+# preflight. Every frame is fingerprinted for a manifest; KairoPipelineCore
+# provides dry-run planning and atomic final exposure.
 def publish_cache(
     project_root: Path,
     snapshot: CacheSnapshot,
