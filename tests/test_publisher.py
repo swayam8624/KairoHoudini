@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Cache manifest, fingerprint, dry-run and atomic publishing tests using temp directories and portable
+# pipeline contracts.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 from __future__ import annotations
 
 from pathlib import Path
