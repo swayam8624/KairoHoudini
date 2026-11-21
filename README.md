@@ -32,3 +32,12 @@ is a separate release gate and is never inferred from mocks.
 
 See [the artist workflow](docs/artist-workflow.md) for the production path and
 native release checklist.
+
+
+## Source learning pathway
+
+Follow [the linked reading order](docs/SOURCE_READING_ORDER.md) to trace module ownership, public interfaces, implementation, tests and cross-repository interaction. This path is designed for learners who want to understand both the algorithms and the API boundaries rather than just execute a sample.
+
+## Open-source learning and extension
+
+Original contributions may be learned from, modified and further developed under the applicable [LICENSE](LICENSE). Preserve required notices; external libraries, application-host SDKs, source adaptations, datasets and media retain their own terms. Check [STATUS.md](STATUS.md) and native-host evidence before treating a feature as verified.
