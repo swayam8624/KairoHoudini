@@ -1,3 +1,4 @@
+# TEACHING MAP: Houdini cache validation produces diagnostics that drive resumable publication decisions. publisher.py writes artifacts; KairoPipelineCore verifies the portable manifest. Host Houdini API assumptions do not hold in plain Python CI.
 """Host-neutral simulation cache inspection and validation rules."""
 
 from __future__ import annotations
