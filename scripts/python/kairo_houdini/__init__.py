@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Houdini Python package entry surface for CacheGuard; host adapter and pure cacheguard/publisher
+# functions remain separately testable.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 """Houdini CacheGuard validation and publication tools."""
 
 from .cacheguard import (
