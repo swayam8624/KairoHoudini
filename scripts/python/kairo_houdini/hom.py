@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Houdini Object Model adapter converting selected nodes and $F frame patterns to portable
+# CacheSnapshot input; it must guard hou imports in non-Houdini test environments.
+# See docs/SOURCE_READING_ORDER.md for HOM → CacheGuard → publish.
+
 """Houdini Object Model adapter for CacheGuard."""
 
 from __future__ import annotations
