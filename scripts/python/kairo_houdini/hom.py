@@ -42,6 +42,9 @@ def houdini_pattern_to_core(value: str) -> str:
     return f"{value[:match.start()]}{'#' * padding}{value[match.end():]}"
 
 
+# Teaching: extract live hou node parameters only at the host boundary,
+# convert a single $F frame token to the portable #### form, and pass a
+# snapshot to CacheGuard without keeping mutable hou objects.
 def inspect_selected_cache(profile: CacheProfile | None = None) -> tuple[Any, Any]:
     """Inspect the selected Houdini cache node and return snapshot/diagnostics."""
 
