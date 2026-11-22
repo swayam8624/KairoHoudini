@@ -1,4 +1,13 @@
-# TEACHING MAP: Houdini cache validation produces diagnostics that drive resumable publication decisions. publisher.py writes artifacts; KairoPipelineCore verifies the portable manifest. Host Houdini API assumptions do not hold in plain Python CI.
+# TEACHING MODULE: Inspect a temporal simulation cache *without* opening
+# a Houdini session. CacheSnapshot stores a validated frame pattern,
+# observed/missing frames, estimated footprint and available disk space.
+# CacheProfile defines acceptable gaps/resources; validate_cache emits
+# blocking or advisory diagnostics that publisher.py must honor.
+#
+# A complete name sequence does not prove simulation physics correctness
+# or identical bytes; KairoPipelineCore fingerprints each published file.
+# Native HOM extraction lives in hom.py and requires real Houdini, whereas
+# these host-neutral validation tests can run in ordinary Python CI.
 """Host-neutral simulation cache inspection and validation rules."""
 
 from __future__ import annotations
@@ -74,6 +83,8 @@ def inspect_cache(
     )
 
 
+# Combine missing-frame, range, space and source-provenance checks.
+# Publish must not reinterpret a failing diagnostic as a harmless warning.
 def validate_cache(
     snapshot: CacheSnapshot,
     profile: CacheProfile = CacheProfile(),
