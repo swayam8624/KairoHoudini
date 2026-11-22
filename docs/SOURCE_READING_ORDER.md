@@ -1,4 +1,5 @@
 # Teaching source map — KairoHoudini
+**Worked source walkthrough:** [Houdini frame sequence → CacheGuard → publish](https://github.com/swayam8624/KairoPipelineCore/blob/docs/teaching-walkthrough-20261121/docs/CROSS_DCC_PUBLICATION_WALKTHROUGH.md).
 
 Houdini simulation/cache publication tooling.
 
