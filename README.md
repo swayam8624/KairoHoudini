@@ -1,5 +1,7 @@
 # Kairo Houdini CacheGuard
 
+**Study the implementation:** [linked file-reading order](docs/SOURCE_READING_ORDER.md) · [Houdini temporal cache preflight and publication](https://github.com/swayam8624/KairoPipelineCore/blob/docs/teaching-walkthrough-20261121/docs/CROSS_DCC_PUBLICATION_WALKTHROUGH.md).
+
 CacheGuard is an artist-facing Houdini package for validating simulation cache
 nodes, detecting incomplete or stale frame sequences, estimating storage cost,
 and publishing immutable cache versions through `KairoPipelineCore`.
