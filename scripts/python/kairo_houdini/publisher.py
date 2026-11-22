@@ -1,3 +1,11 @@
+# TEACHING MODULE: An inspected Houdini frame cache is published as
+# a versioned file bundle, not as a live .hip simulation or an arbitrary
+# native Houdini callback. Validate sequence completeness and source
+# provenance first; fingerprint each frame, build a PublishManifest,
+# and delegate staging/rename to KairoPipelineCore.publish_bundle.
+#
+# Scene-level unit tests can exercise the pure policy/manifest portions,
+# but only a licensed Houdini host run confirms a real HOM cache export.
 """Immutable Houdini cache publication through KairoPipelineCore."""
 
 from __future__ import annotations
@@ -22,6 +30,9 @@ class CachePublishResult:
     dry_run: bool
 
 
+# Translate a validated CacheSnapshot to a declared immutable version.
+# Copy and rehash through the shared publisher; never directly mutate
+# destination files before the complete staging phase succeeds.
 def publish_cache(
     project_root: Path,
     snapshot: CacheSnapshot,
